@@ -36,3 +36,22 @@ The code provided is a starting point to your solution: you may change it as you
 
 ## Extra
 The response time of the external authorizer wasn't considered in this prompt but it's a huge constraint of the system. Considering that the request to Zippi's main system may take longer than the time that the authorizer has to respond to the processor, what solutions could we build in this case? It's not necessary to implement the solution.
+
+## Troubleshooting
+
+### How do I build a Gitpod?
+
+Gitpod is an online environment that can be mounted from Git repositories. Go to their [landing page](https://www.gitpod.io/#get-started) and add the link of this repository to mount a new environment.
+
+### Your Ruby version is 2.6.6, but your Gemfile specified 2.5.5
+
+Gitpod comes with a different version of Ruby, you should change these lines of the `Gemfile`
+```ruby
+# before
+ruby '2.5.5'
+
+# after
+ruby '2.6.6'
+```
+
+This version was tested but if you find any unexpected behavior you can use [this branch](https://github.com/zippi-tech/ext-auth-interview/tree/italo/add-gitpod) to deploy on Gitpod, following the step above. It takes longer than the default but it installs the correct version of Ruby,
