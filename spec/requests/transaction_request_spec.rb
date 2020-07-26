@@ -76,7 +76,7 @@ RSpec.describe "Transaction", type: :request do
     end
 
     it 'for sending an unregistered id' do
-      post '/transaction', params: { amount: 1.99, datetime: '123', id: 1 }
+      post '/transaction', params: { amount: 1.99, datetime: '02/02/2019 10:01', id: 1 }
       expect(response).to have_http_status(:bad_request)
     end
   end
